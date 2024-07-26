@@ -9,7 +9,7 @@
 ## isere dados 
  sudo yum install java-11-openjdk-devel
 ### llmSherpa
-
+OU ENTÃO TOCA NO DOCKER (INSTRUÇÕES A BAIXO)
 - instala o java
 ```
  sudo yum install java-11-openjdk-devel
@@ -57,6 +57,23 @@ nltk.download('punkt')
 ```
 exit()
 ```
+```
+python -m nlm_ingestor.ingestion_daemon
+```
 
-- 
+COM DOCKER:
+Run the docker file
+A docker image is available via public github container registry.
 
+Pull the docker image:
+```
+docker pull ghcr.io/nlmatics/nlm-ingestor:latest
+```
+Run the docker image mapping the port 5001 to port of your choice.
+```
+docker run -p 5010:5001 ghcr.io/nlmatics/nlm-ingestor:latest
+```
+verifica se está correndo:
+```
+curl http://localhost:5010/
+```
