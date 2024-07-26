@@ -71,9 +71,9 @@ docker pull ghcr.io/nlmatics/nlm-ingestor:latest
 ```
 Run the docker image mapping the port 5001 to port of your choice.
 ```
-docker run -p 5010:5001 ghcr.io/nlmatics/nlm-ingestor:latest
+docker run -p 5001:5001 ghcr.io/nlmatics/nlm-ingestor:latest
 ```
 verifica se está correndo:
 ```
-curl http://localhost:5010/
+curl http://localhost:5001/
 ```
