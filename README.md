@@ -44,6 +44,10 @@ git clone https://github.com/nlmatics/nlm-ingestor.git
 ```
 - instala as dependências:
 ```
+sudo yum install gcc-c++
+```
+
+```
 cd nlm-ingestor
 pip install -r requirements.txt
 ```
