@@ -3,6 +3,16 @@
 ## faz a reserva 
 
 ## coloca o milvus a rodar
+usando o notebook da reserva Milvus Example por meio da conexão local.
+
+coneta ao portainer e vê que o milvus está rodando em um container do docker.
+
+inicia o attu para observar se tá funcionndo.
+
+## verifica o docker/milvus
+```
+docker inspect ibm-lh-milvus
+```
 
 ## cria coleção
 
