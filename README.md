@@ -122,10 +122,6 @@ Abra um terminal no seu computador local e use o seguinte comando scp para copia
 scp -P <porta> /caminho/para/o/seu/file.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/caminho/de/destino/na/vm/
 ```
 
- - scp -P 37800 /Users/Habber/Downloads/condição-geral-automóvel.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/home/watsonx/Documents/CA_data
- - scp -P 37800 /Users/Habber/Downloads/tabela-bonus_malus.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/home/watsonx/Documents/CA_data
- - scp -P 37800 /Users/Habber/Downloads/proposta-automóvel-veículos-ligeiros.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/home/watsonx/Documents/CA_data
- - scp -P 37800 /Users/Habber/Downloads/certificado-matrícula.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/home/watsonx/Documents/CA_data
 
 ```
 cd Documents
