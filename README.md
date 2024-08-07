@@ -130,6 +130,58 @@ sudo yum install epel-release
 sudo yum install tesseract
 
 ```
+
+# USAR OLLAMA PARA RESUMIR AS TABELAS 
+
+## RODAR DIRETAMENTE NO SISTEMA 
+
+BAIXAR OLLAMA
 ```
-cd Documents
+curl -fsSL https://ollama.com/install.sh | sh
 ```
+
+verifica a instalação:
+```
+systemctl status ollama
+```
+
+PULL LLAMA3.1
+```
+ollama pull llama3.1
+```
+
+verifica se o modelo está disponível:
+```
+ollama list
+```
+
+
+## RODAR NO CONTAINER DO DOCKER 
+
+pull da imagem
+```
+docker pull ollama/ollama:latest
+```
+na porta 11435 :)
+```
+docker run -d --name ollama --restart always -p 11435:11434 ollama/ollama:latest
+```
+pull do llama3.1 no container
+```
+docker exec -it ollama /bin/bash
+```
+```
+ollama pull llama3.1
+```
+verifica a lista dos modelos 
+```
+ollama list
+```
+
+```
+exit
+```
+
+
+
+
