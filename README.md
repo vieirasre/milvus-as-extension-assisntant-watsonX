@@ -11,6 +11,8 @@ inicia o attu para observar se tá funcionndo.
 
 ## verifica o docker/milvus
 ```
+docker start ibm-lh-milvus
+
 docker inspect ibm-lh-milvus
 ```
 
