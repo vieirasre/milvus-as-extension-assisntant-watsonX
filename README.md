@@ -133,6 +133,17 @@ sudo yum install tesseract
 
 ```
 
+# USAR VM COM GPU
+faz a reserva.
+
+para conectar via ssh precisa baixar a vpn: https://github.com/IBM/itz-support-public/blob/main/IBM-On-premise/IBM-On-premise-Runbooks/configure-vpn.md
+
+depois conecta via:
+```
+ssh user@ip
+```
+e usa a senha do user
+
 # USAR OLLAMA PARA RESUMIR AS TABELAS 
 
 ## RODAR DIRETAMENTE NO SISTEMA 
