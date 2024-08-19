@@ -124,6 +124,12 @@ Abra um terminal no seu computador local e use o seguinte comando scp para copia
 scp -P <porta> /caminho/para/o/seu/file.pdf watsonx@eu-de.services.cloud.techzone.ibm.com:/caminho/de/destino/na/vm/
 ```
 
+enviar já a pasta toda:
+```
+scp -P 27566 -r /caminho/para/o/sua/pasta watsonx@na4.services.cloud.techzone.ibm.com:/caminho/de/destino/na/vm/
+
+```
+
 # USAR PYPDFLOADER 
 
 Instala o tessseract
